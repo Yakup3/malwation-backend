@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "docker-build": "docker build -t malwation-backend .",
+    "docker-run": "docker run -p 3000:3000 malwation-backend"
   },
   "author": "",
   "license": "ISC",

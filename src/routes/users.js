@@ -10,7 +10,6 @@ const collectionName = "users";
 router.post("/register", async (req, res) => {
   try {
     const { email, password } = req.body;
-    console.log(req.body);
 
     const schema = z.object({
       email: z.string().email(),
